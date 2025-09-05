@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Page Header -->
+  <header>
+    <h1>Welcome to My Interactive Page </h1>
+    <!-- Button to toggle between light and dark mode -->
+    <button id="theme-toggle">Switch to Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Feature Section -->
+    <section class="card">
+      <h2>Click Counter </h2>
+      <!-- Display area for the counter value -->
+      <p id="counter-display">0</p>
+      <!-- Button that increases the counter -->
+      <button id="counter-btn">Click Me</button>
+      <!-- Area for fun messages that change with counter value -->
+      <p id="counter-message"></p>
+    </section>
+
+    <!-- Form Section -->
+    <section class="card">
+      <h2>Sign Up Form </h2>
+      <!-- Form element with name, email, and password fields -->
+      <form id="signup-form">
+        <!-- Name Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <!-- Error message container for Name -->
+        <small class="error" id="name-error"></small>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <!-- Error message container for Email -->
+        <small class="error" id="email-error"></small>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <!-- Error message container for Password -->
+        <small class="error" id="password-error"></small>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+        <!-- Success/Error feedback for entire form -->
+        <p id="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

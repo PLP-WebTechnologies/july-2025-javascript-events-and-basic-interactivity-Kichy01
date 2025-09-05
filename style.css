@@ -1,0 +1,94 @@
+/*  General Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  Page Body  */
+body {
+  background-color: #ffffff;  /* Default light background */
+  color: #333333;             /* Dark text */
+  line-height: 1.6;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s; /* Smooth theme toggle */
+}
+
+/*  Dark Mode Styling  */
+body.dark-mode {
+  background-color: #121212;  /* Dark background */
+  color: #f1f1f1;             /* Light text */
+}
+
+/*  Header Section  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+/*  Buttons  */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #007bff;   /* Primary blue */
+  color: white;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;   /* Darker blue on hover */
+}
+
+/*  Card Layout (for sections)  */
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.dark-mode .card {
+  background: #1e1e1e; /* Dark mode card background */
+}
+
+/*  Form Styling  */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+/* Error messages below inputs */
+.error {
+  color: red;
+  font-size: 0.85rem;
+  height: 15px; /* Keeps space consistent even if empty */
+}
+
+/* Feedback after form submission */
+#form-message {
+  margin-top: 10px;
+  font-weight: bold;
+}
